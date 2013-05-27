@@ -1,0 +1,13 @@
+The asoc evaluation works as such:
+
+Provide a temporary memory, a target, a name and a list of associations.
+
+What the asoc function will try to do is calculate the current strength of the node. To do this one first needs to recursivly calculate all connected nodes to aquire a correct value.
+
+The only links that are safe to guarantee are those that has but one connection for as the evaluation came to them they did not fire and as such will not get an increased value.
+
+We can then add the singletons to the the temporary memory with their default strength and can now go back to the previous layer and try to evaluate this.
+
+Once the puzzle has been solved and the only unevaluated connection is the one that we came from we put our strength in the temporary memory and return.
+
+This goes on untill we get back to the node that fired at which point we calculate the current strength of the node and returns the temporary memory. 
