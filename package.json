@@ -1,0 +1,22 @@
+{
+  "name": "Asoc",
+  "version": "0.0.0",
+  "description": "Text Association librarie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "AI",
+    "Association",
+    "Text"
+  ],
+  "author": "Adam Lewenhaupt",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-watch": "~0.4.3"
+  }
+}
